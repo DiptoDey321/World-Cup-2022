@@ -139,7 +139,6 @@ li {
 #match-details nav {
     width: 312px;
     background-color: black;
-    border-radius: 10px;
     flex-grow: 0;
     height: fit-content;
 }
@@ -174,6 +173,14 @@ nav ul li:nth-child(2) {
     font-weight: 500;
 }
 
+.vs-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
 .vs {
     font-size: 16px;
     font-weight: 600;
@@ -201,16 +208,11 @@ nav ul li:nth-child(2) {
     border-radius: 4px;
 }
 
-.vs-img img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
 .details {
     text-align: left;
     margin-left: 20px;
     margin-right: 10px;
+    text-align: center;
 }
 
 .details h4 {
@@ -373,6 +375,11 @@ footer h2 {
 
 @media (min-width: 688px) and (max-width: 992px) {
 
+    #banner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     .banner-left {
         position: relative;
     }
@@ -441,6 +448,10 @@ footer h2 {
         gap: 20px;
     }
 
+    .match-tab {
+        display: none;
+    }
+
     .more-btn {
         display: block;
         margin-top: 30px;
@@ -456,4 +467,21 @@ footer h2 {
         border-radius: 5px;
         font-size: 17px;
     }
+
+    .others {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .more-btn {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
 }
