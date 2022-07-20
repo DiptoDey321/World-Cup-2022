@@ -187,6 +187,11 @@ nav ul li:nth-child(2) {
 }
 
 /* aside match css  */
+
+aside {
+    width: 100%;
+}
+
 .match-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
